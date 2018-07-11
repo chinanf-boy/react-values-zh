@@ -6,7 +6,7 @@
 
 > "version": "0.1.0"
 
-[github source](https://github.com/ianstormtaylor/react-values)
+[github source commit](https://github.com/ianstormtaylor/react-values/tree/38a3650dcc1719fdb23cdb7f844273804526a374)
 
 [更多其他中文翻译](https://github.com/chinanf-boy/chinese-translate-list)
 
@@ -22,13 +22,7 @@
 ## 校对🀄️
 
 - ⏰ 2018 7.11 开
-- 
-
-- [x] [1. Readme.zh.md](./Readme.zh.md)
-- [x] [2. Contributing](Contributing.md)
-- [x] [3. ./docs/guide](./docs/guide.md)
-- [x] [4. ./docs/reference](./docs/reference.md)
-
+- ⏰ 2018 7.11 结
 
 ---
 
