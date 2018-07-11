@@ -49,18 +49,18 @@
 - **toggles, dropdowns, lists, checkbox groups, popovers, tooltips**
 - 或者您可以命名它!
 
-它使用一个基于`render-prop`的小API来实现这一点,它提供了有用的转换`toggle`,`increment`,`filter`等等,取决于值的类型,所有都基于JavaScripts原生值类型...
+它使用基于`render-prop`的 小API 来实现这一点,它提供了有用的转换`toggle`,`increment`,`filter`等等,取决于值的类型,所有都基于 JavaScripts 原生值类型...
 
--   `Any`值提供简单的转换`set`和`clear`. 
--   `Array`值提供原生方法`push`,`pop`,`filter`等
--   `Boolean`价值提供`toggle`,我们都重新实施了100次. 
--   `Date`值提供了非常有用的转换`setHours`和`incrementMonth`. 
--   `Map`值提供原生方法`set`,`delete`和`clear`. 
--   `Number`价值提供`increment`和`decrement`,也在每个代码库中重写. 
--   `Set`值提供原生方法`add`,`delete`和`clear`. 
--   `String`值提供原生方法`concat`,`repeat`,`trim`等
+-   `Any`值 提供简单的转换像`set`和`clear`. 
+-   `Array`值 提供原生方法`push`,`pop`,`filter`等
+-   `Boolean`值 提供`toggle`,当然我们也能重新实现100次. 
+-   `Date`值 提供了非常有用的转换`setHours`和`incrementMonth`. 
+-   `Map`值 提供原生方法`set`,`delete`和`clear`. 
+-   `Number`值 提供`increment`和`decrement`,也在每个代码库中重写. 
+-   `Set`值 提供原生方法`add`,`delete`和`clear`. 
+-   `String`值 提供原生方法`concat`,`repeat`,`trim`等
 
-这样可以避免您不断重写相同的状态管理逻辑,这样您就可以将组件集中在行为和表示上. 
+这样可以避免您不断重写 相同的状态 管理逻辑,这样您就可以将组件集中在 **行为**和 **表示** 上. 
 
 例如,这是一个`<Toggle>`的实现,通过使用`<BooleanValue>`了了几行就搞定: 
 
@@ -101,25 +101,27 @@ const Thumb = styled.div`
 
 在使用 **React** 构建应用程序时,您最终会在此过程中构建大量有状态组件. 无论哪个级别的 UI组件,都会有,如 `切换,工具提示,复选框组,下拉列表` 等,还是在 应用程序级别的组件`模态框,弹出窗口,排序,过滤` 等. 
 
-在此过程中,您最终会在整个地方重新实现工厂状态处理逻辑的运行 - 无论是否`this.setState`或者通过一遍又一遍地构建相同的动作创建者. 并且为了使您的组件在您的应用程序中可以很好地重用,您可以使用它们来增强它们以处理"受控"和"不受控制"的用例`value`要么`defaultValue`. 为了使事情更容易管理,你重新发明了常见的变换`open`,`close`,`toggle`,`increment`,`decrement`等等许多不同的组件. 如果您正在与团队合作,那么您最终会在整个代码库中以不同的方式完成所有这些工作. 
+在此过程中,无论是否使用`this.setState`，你最终都会重新实现 折磨般的状态的处理逻辑的运行 - 或者通过一遍又一遍地构建相同的行为创建者. 还有可能为了使您的组件 在 您的应用程序中可以很好地重用,您会使用`value`要么`defaultValue`来增强处理"受控"和"不受控制"的使用. 
 
-最后,您现在维护的逻辑比必要的多得多,在许多不同的地方以略微不同的方式复制. 您的应用程序包的大小越来越大. 
+为了使事情更容易管理,你重新发明了常见的转换函数`open`,`close`,`toggle`,`increment`,`decrement`等等,在许多不同的组件. 如果您正在与团队合作,那么您最终会在 整个代码库 中以 不同的方式 完成所有这些一样工作. 
 
-`react-values`用一些原则解决所有这些......
+最后,您现在 维护的逻辑 比 **必要的** 多得多,在许多不同的地方仅仅是略微不同方式的复制. 您的应用程序包的大小越来越大. 
+
+`react-values`用一些原则解决所有的这些......
 
 <br/>
 
 ### 原理
 
-1.  **利用 渲染道具{render props}.**它使用基于render-prop的API,通过灵活的function-as-children模式向您展示其状态和一些方便的转换函数. 
+1.  **利用渲染道具{render props}.** 它使用基于`render-prop`的API,通过灵活的`function-as-children`模式向您展示 其状态 和 一些 方便的转换函数. 
 
-2.  **遵循React的惯例.**它的组件遵循React自己的命名约定,使用熟悉的概念`value/defaultValue`. 这使得插入现有代码库或框架非常容易. 
+2.  **遵循React的惯例.** 它的组件遵循 `React` 自己的命名约定,使用熟悉的概念`value/defaultValue`. 这使得插入现有代码库或框架非常容易. 
 
-3.  **遵循JavaScript的约定.**它暴露了JavaScript熟悉的内置方法,如`setDate/setHours`,`push/pop`,`filter`,`concat`等,以避免重新发明轮子,并强迫您不断阅读文档. 
+3.  **遵循JavaScript的约定.** 它暴露了JavaScript熟悉的内置方法,如`setDate/setHours`,`push/pop`,`filter`,`concat`等,以避免重新发明轮子,并强迫您不断阅读文档. 
 
-4.  **非常轻巧.**它非常轻巧 (可树木抖动) ,大多数组件只有几百字节,因此您甚至可以从面向公众的组件库中导入它. 
+4.  **非常轻巧.** 它非常轻巧 (树抖动) ,大多数组件只有几百字节,因此您甚至可以从面向公众的组件库中导入它. 
 
-5.  **优先考虑方便.**它旨在提供方便的功能,如`increment`,`toggle`和聪明的人一样`incrementDate`,`decrementMonth`,因此您可以在几行代码中构建复杂的交互. 
+5.  **优先考虑方便.** 它旨在提供方便的功能,如`increment`,`toggle`和聪明的像`incrementDate`,`decrementMonth`,因此您可以在几行代码中构建复杂的交互. 
 
 <br/>
 
@@ -129,7 +131,7 @@ const Thumb = styled.div`
 
 -   [**基本切换**](https://ianstormtaylor.github.io/react-values/#/basic-toggle)- 用一个`Boolean`创建一个简单的切换组件. 
 -   [**可重复使用的切换**](https://ianstormtaylor.github.io/react-values/#/reusable-toggle)- 展示如何将其切换为您自己的UI工具包中的受控组件. 
--   [**计数器**](https://ianstormtaylor.github.io/react-values/#/counter)- 使用a的简单计数器`Number`及其便利性转变. 
+-   [**计数器**](https://ianstormtaylor.github.io/react-values/#/counter)- 使用简单计数器`Number`及其便利性转变. 
 -   [**时间选择器**](https://ianstormtaylor.github.io/react-values/#/time-picker)- 一个更复杂的时间选择器组件,使用`Date`及其便利性转变. 
 -   [**过滤**](https://ianstormtaylor.github.io/react-values/#/filtering)- 一个基本的`String`用于过滤列表的值. 
 -   [**复选框设置**](https://ianstormtaylor.github.io/react-values/#/checkbox-set)- 用一个`Set`跟踪复选框组. 
@@ -147,12 +149,12 @@ const Thumb = styled.div`
 -   [**入门**](./docs/guide.md)
     -   [安装`react-values`](./docs/guide.md#installing-react-values)
     -   [构建组件](./docs/guide.md#building-a-component)
-    -   [介绍国家](./docs/guide.md#introducing-state)
+    -   [介绍状态](./docs/guide.md#introducing-state)
     -   [观察变化](./docs/guide.md#observing-changes)
     -   [设置默认值](./docs/guide.md#settings-defaults)
-    -   [受控制与不受控制传播道具](./docs/guide.md#controlled-vs-uncontrolled)
-    -   [参考](./docs/guide.md#spreading-props)
--   [**即使这还不够,你也可以**](./docs/reference.md)
+    -   [受控制与不受控制](./docs/guide.md#controlled-vs-uncontrolled)
+    -   [传播 props](./docs/guide.md#spreading-props)
+-   [**参考**](./docs/reference.md)
     -   [`<AnyValue>`](./docs/reference.md#anyvalue)
     -   [`<ArrayValue>`](./docs/reference.md#arrayvalue)
     -   [`<BooleanValue>`](./docs/reference.md#booleanvalue)
@@ -162,7 +164,7 @@ const Thumb = styled.div`
     -   [`<SetValue>`](./docs/reference.md#setvalue)
     -   [`<StringValue>`](./docs/reference.md#stringvalue)
 
-阅读源本身[,这很简单!](./src)贡献!
+即使这还不够,你也可以,[阅读源码](./src),这很简单!
 
 <br/>
 
