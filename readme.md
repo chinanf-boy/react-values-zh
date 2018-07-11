@@ -27,7 +27,7 @@
 - [x] [1. Readme.zh.md](./Readme.zh.md)
 - [x] [2. Contributing](Contributing.md)
 - [x] [3. ./docs/guide](./docs/guide.md)
-- [ ] [4. ./docs/reference](./docs/reference.md)
+- [x] [4. ./docs/reference](./docs/reference.md)
 
 
 ---
