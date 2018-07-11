@@ -1,10 +1,8 @@
-# react-values 「`docs`中文🇨🇳翻译」
+# react-values@0.1.0 「`docs`中文🇨🇳翻译」
 
 「 `react-values`为您提供一组简单,可组合的帮助程序,使您可以构建更复杂,有状态的UI组件,如切换,下拉列表,列表,复选框组,弹出窗口,工具提示,您可以命名它! 」
 
 > `toggles, dropdowns, lists, checkbox groups, popovers, tooltips`
-
-> "version": "0.1.0"
 
 [github source commit](https://github.com/ianstormtaylor/react-values/tree/38a3650dcc1719fdb23cdb7f844273804526a374)
 
@@ -19,7 +17,7 @@
 
 [help me live , live need money 💰](https://github.com/chinanf-boy/live-need-money)
 
-## 校对🀄️
+## 校对 ✅
 
 - ⏰ 2018 7.11 开
 - ⏰ 2018 7.11 结
@@ -28,9 +26,6 @@
 
 <!-- START doctoc -->
 <!-- END doctoc -->
-
----
-
 
 <p align="center">
   <a href="#"><img src="./docs/images/banner.png" /></a>
@@ -180,13 +175,13 @@ const Thumb = styled.div`
 如果你正在使用`react-values`这是第一次看看[入门](./docs/guide.md)指导您熟悉它的工作原理. 一旦你完成了,你可能想要查看全部[API参考](http://docs.slatejs.org/react-values-core). 
 
 -   [**入门**](./docs/guide.md)
-    -   [安装`react-values`](./docs/guide.md#installing-react-values)
-    -   [构建组件](./docs/guide.md#building-a-component)
-    -   [介绍状态](./docs/guide.md#introducing-state)
-    -   [观察变化](./docs/guide.md#observing-changes)
-    -   [设置默认值](./docs/guide.md#settings-defaults)
-    -   [受控制与不受控制](./docs/guide.md#controlled-vs-uncontrolled)
-    -   [传播 props](./docs/guide.md#spreading-props)
+    - [安装`react-values`](#%E5%AE%89%E8%A3%85react-values)
+    - [构建一个组件](#%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%BB%84%E4%BB%B6)
+    - [介绍状态](#%E4%BB%8B%E7%BB%8D%E7%8A%B6%E6%80%81)
+    - [观察变化](#%E8%A7%82%E5%AF%9F%E5%8F%98%E5%8C%96)
+    - [设置默认值](#%E8%AE%BE%E7%BD%AE%E9%BB%98%E8%AE%A4%E5%80%BC)
+    - [受控制与不受控制](#%E5%8F%97%E6%8E%A7%E5%88%B6%E4%B8%8E%E4%B8%8D%E5%8F%97%E6%8E%A7%E5%88%B6)
+    - [传播props](#%E4%BC%A0%E6%92%ADprops)
 -   [**参考**](./docs/reference.md)
     -   [`<AnyValue>`](./docs/reference.md#anyvalue)
     -   [`<ArrayValue>`](./docs/reference.md#arrayvalue)
@@ -197,7 +192,7 @@ const Thumb = styled.div`
     -   [`<SetValue>`](./docs/reference.md#setvalue)
     -   [`<StringValue>`](./docs/reference.md#stringvalue)
 
-即使这还不够,你也可以,[阅读源码](./src),这很简单!
+即使这还不够,你也可以,[阅读源码](https://github.com/ianstormtaylor/react-values/tree/master/src),这很简单!
 
 <br/>
 
