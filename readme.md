@@ -79,14 +79,14 @@
 
 它使用基于`render-prop`的 小API 来实现这一点,它提供了有用的转换`toggle`,`increment`,`filter`等等,取决于值的类型,所有都基于 JavaScripts 原生值类型...
 
--   `Any`值 提供简单的转换像`set`和`clear`. 
--   `Array`值 提供原生方法`push`,`pop`,`filter`等
--   `Boolean`值 提供`toggle`,当然我们也能重新实现100次. 
--   `Date`值 提供了非常有用的转换`setHours`和`incrementMonth`. 
--   `Map`值 提供原生方法`set`,`delete`和`clear`. 
--   `Number`值 提供`increment`和`decrement`,也在每个代码库中重写. 
--   `Set`值 提供原生方法`add`,`delete`和`clear`. 
--   `String`值 提供原生方法`concat`,`repeat`,`trim`等
+-   `Any` 提供简单的转换像`set`和`clear`. 
+-   `Array` 提供原生方法`push`,`pop`,`filter`等
+-   `Boolean` 提供`toggle`,当然我们也能重新实现100次. 
+-   `Date` 提供了非常有用的转换`setHours`和`incrementMonth`. 
+-   `Map` 提供原生方法`set`,`delete`和`clear`. 
+-   `Number` 提供`increment`和`decrement`,也在每个代码库中重写. 
+-   `Set` 提供原生方法`add`,`delete`和`clear`. 
+-   `String` 提供原生方法`concat`,`repeat`,`trim`等
 
 这样可以避免您不断重写 相同的状态 管理逻辑,这样您就可以将组件集中在 **行为**和 **表示** 上. 
 
