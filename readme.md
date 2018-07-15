@@ -1,4 +1,7 @@
-# react-values@0.1.0 「`docs`中文🇨🇳翻译」
+# react-values@0.1.0 [![translate-svg]][translate-list]
+
+[translate-svg]: http://llever.com/translate.svg
+[translate-list]: https://github.com/chinanf-boy/chinese-translate-list
 
 「 `react-values`为您提供一组简单,可组合的帮助程序,使您可以构建更复杂,有状态的UI组件,如切换,下拉列表,列表,复选框组,弹出窗口,工具提示,您可以命名它! 」
 
