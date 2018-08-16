@@ -14,7 +14,7 @@
 
 翻译的原文 | 与日期 | 最新更新 | 更多
 ---|---|---|---
-[commit] | ⏰ 2018 7.11 | ![last] | [more]
+[commit] | ⏰ 2018 7.11 | ![last] | [中文翻译][more]
 <!-- doc-templite END generated -->
 
 [last]: https://img.shields.io/github/last-commit/chinanf-boy/react-values-zh.svg
@@ -29,7 +29,7 @@
 ## 生活
 
 [help me live , live need money 💰](https://github.com/chinanf-boy/live-need-money)
-“
+
 ---
 
 <!-- START doctoc -->
