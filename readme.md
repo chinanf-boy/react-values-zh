@@ -7,24 +7,29 @@
 
 > `toggles, dropdowns, lists, checkbox groups, popovers, tooltips`
 
-[github source commit](https://github.com/ianstormtaylor/react-values/tree/38a3650dcc1719fdb23cdb7f844273804526a374)
+## 校对 ✅
 
-[更多其他中文翻译](https://github.com/chinanf-boy/chinese-translate-list)
+<!-- doc-templite START generated -->
+<!-- time = '2018 7.11' -->
+
+翻译的原文 | 与日期 | 最新更新 | 更多
+---|---|---|---
+[commit] | ⏰ 2018 7.11 | ![last] | [more]
+<!-- doc-templite END generated -->
+
+[last]: https://img.shields.io/github/last-commit/chinanf-boy/react-values-zh.svg
+[commit]: https://github.com/ianstormtaylor/react-values/tree/38a3650dcc1719fdb23cdb7f844273804526a374
+[more]: https://github.com/chinanf-boy/chinese-translate-list
 
 
-欢迎 `Issue` 和 `Pull` ❤️, 最好 `Pull` 👏
+### 贡献
 
----
+欢迎 👏 勘误/校对/更新贡献 😊 [具体贡献请看](https://github.com/chinanf-boy/chinese-translate-list#贡献)
 
 ## 生活
 
 [help me live , live need money 💰](https://github.com/chinanf-boy/live-need-money)
-
-## 校对 ✅
-
-- ⏰ 2018 7.11 开
-- ⏰ 2018 7.11 结
-
+“
 ---
 
 <!-- START doctoc -->
