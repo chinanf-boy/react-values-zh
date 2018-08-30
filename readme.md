@@ -11,16 +11,16 @@
 
 <!-- doc-templite START generated -->
 <!-- time = '2018 7.11' -->
-
+<!-- repo = 'ianstormtaylor/react-values' -->
+<!-- commit = '38a3650dcc1719fdb23cdb7f844273804526a374' -->
 翻译的原文 | 与日期 | 最新更新 | 更多
 ---|---|---|---
-[commit] | ⏰ 2018 7.11 | ![last] | [中文翻译][more]
-<!-- doc-templite END generated -->
+[commit] | ⏰ 2018 7.11 | ![last] | [中文翻译][translate-list]
 
-[last]: https://img.shields.io/github/last-commit/chinanf-boy/react-values-zh.svg
+[last]: https://img.shields.io/github/last-commit/ianstormtaylor/react-values.svg
 [commit]: https://github.com/ianstormtaylor/react-values/tree/38a3650dcc1719fdb23cdb7f844273804526a374
-[more]: https://github.com/chinanf-boy/chinese-translate-list
 
+<!-- doc-templite END generated -->
 
 ### 贡献
 
